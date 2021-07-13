@@ -1,0 +1,41 @@
+﻿<Window x:Class="BankRebootTimeService.View.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankRebootTimeService.View"
+        mc:Ignorable="d"
+        Title="Редактирование" Height="452.4" Width="405" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Должность:" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Заработная плата:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,136,0,0"/>
+        <Label Content="Налог:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,165,0,0"/>
+        <Label Content="Необходимо оплатить:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,194,0,0"/>
+        <Label Content="Забрал зарплату:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,223,0,0"/>
+        <Label Content="Кол-во раз неуплаты налога:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,252,0,0"/>
+        <Label Content="Накоплено ЗП:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,281,0,0"/>
+        <TextBox Text="{Binding CountOfNotPaydTimes, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <ComboBox Text="{Binding TakeS, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,223,0,0" VerticalAlignment="Top" Width="203">
+            <TextBlock>True</TextBlock>
+            <TextBlock>False</TextBlock>
+        </ComboBox>
+        <TextBox Text="{Binding ToPay, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Label Content="{Binding Tax, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,166,0,0"  VerticalAlignment="Top" Width="203"/>
+        <TextBox Text="{Binding TheSalary, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBox Text="{Binding Post, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBox Text="{Binding Secondname, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBox Text="{Binding Firstname, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBox Text="{Binding ToTake, Mode=TwoWay}"  HorizontalAlignment="Left" Height="23" Margin="181,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Button Command="{Binding SaveChanges}" Content="Сохранить" HorizontalAlignment="Left" Margin="185,381,0,0" VerticalAlignment="Top" Width="203"/>
+        <Label Content="N паспорта:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding PasNumber, Mode=TwoWay}" HorizontalAlignment="Left" Height="23" Margin="181,20,0,0" VerticalAlignment="Top" Width="203"/>
+        <Label Content="Использовал фальшивки:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,310,0,0"/>
+        <ComboBox Text="{Binding UseAFalse, Mode=TwoWay}"  HorizontalAlignment="Left" Height="23" Margin="181,311,0,0" VerticalAlignment="Top" Width="203">
+            <TextBlock>True</TextBlock>
+            <TextBlock>False</TextBlock>
+        </ComboBox>
+
+    </Grid>
+</Window>

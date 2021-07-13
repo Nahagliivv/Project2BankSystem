@@ -1,0 +1,15 @@
+﻿<Page x:Class="BankRebootTimeService.View.WelcomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BankRebootTimeService.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="WelcomePage " Background="#FF86FC83">
+
+    <Grid>
+        <Label HorizontalAlignment="Center" Height="auto"   Content="Designed by&#xA;Rebesh Mark&#xD;&#xA;for &quot;Время перезагрузки&quot;" VerticalAlignment="Center" Width="auto" BorderThickness="0" FontSize="22"/>
+
+    </Grid>
+</Page>

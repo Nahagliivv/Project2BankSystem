@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="BankRebootTimeService.View.SingleCreditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BankRebootTimeService.View"
+             mc:Ignorable="d" Height="81.348" Width="450">
+    <Border BorderBrush="Black" BorderThickness="1">
+        <Grid Background="white">
+            <Label Content="N паспорта:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="{Binding PasNum}" HorizontalAlignment="Left" Margin="84,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.047,-0.06"/>
+            <Label Content="Получено денег:" HorizontalAlignment="Left" Margin="136,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="{Binding Money}" HorizontalAlignment="Left" Margin="240,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.047,-0.06"/>
+            <Label Content="Необходимо вернуть денег:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
+            <Label Content="{Binding MoneyToBack}" HorizontalAlignment="Left" Margin="177,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.047,-0.06"/>
+            <Label Content="Осталось времени:" HorizontalAlignment="Left" Margin="264,39,0,0" VerticalAlignment="Top"/>
+            <Label Content="{Binding TimeString}" HorizontalAlignment="Left" Margin="382,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.047,-0.06"/>
+            <Label Content="Время вышло?" HorizontalAlignment="Left" Margin="309,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="{Binding IsTimeOut, Mode=TwoWay}" HorizontalAlignment="Left" Margin="403,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.047,-0.06"/>
+
+        </Grid>
+    </Border>
+</UserControl>
